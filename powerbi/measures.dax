@@ -1,0 +1,101 @@
+-- NovaMart Power BI DAX Measures
+-- All core measures use Completed orders only.
+
+Total Revenue =
+CALCULATE(
+    SUM(Orders[Revenue]),
+    Orders[Order_Status] = "Completed"
+)
+
+Total Cost =
+CALCULATE(
+    SUM(Orders[Cost]),
+    Orders[Order_Status] = "Completed"
+)
+
+Total Profit =
+[Total Revenue] - [Total Cost]
+
+Profit Margin % =
+DIVIDE([Total Profit], [Total Revenue], 0)
+
+Total Orders =
+CALCULATE(
+    DISTINCTCOUNT(Orders[Order_ID]),
+    Orders[Order_Status] = "Completed"
+)
+
+Total Customers =
+CALCULATE(
+    DISTINCTCOUNT(Orders[Customer_ID]),
+    Orders[Order_Status] = "Completed"
+)
+
+Units Sold =
+CALCULATE(
+    SUM(Orders[Quantity]),
+    Orders[Order_Status] = "Completed"
+)
+
+Average Order Value =
+DIVIDE([Total Revenue], [Total Orders], 0)
+
+Previous Period Revenue =
+CALCULATE(
+    [Total Revenue],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+
+Revenue Growth % =
+DIVIDE(
+    [Total Revenue] - [Previous Period Revenue],
+    [Previous Period Revenue],
+    0
+)
+
+Previous Period Profit =
+CALCULATE(
+    [Total Profit],
+    DATEADD('Date'[Date], -1, MONTH)
+)
+
+Profit Growth % =
+DIVIDE(
+    [Total Profit] - [Previous Period Profit],
+    [Previous Period Profit],
+    0
+)
+
+Repeat Customers =
+VAR CustomerOrderCounts =
+    ADDCOLUMNS(
+        VALUES(Customers[Customer_ID]),
+        "CompletedOrders", CALCULATE([Total Orders])
+    )
+RETURN
+COUNTROWS(FILTER(CustomerOrderCounts, [CompletedOrders] > 1))
+
+Repeat Customer Rate % =
+DIVIDE([Repeat Customers], [Total Customers], 0)
+
+-- Additional page-level measures
+Revenue per Customer = DIVIDE([Total Revenue], [Total Customers])
+
+New Customers =
+VAR PeriodStart = MIN('Calendar'[Date])
+VAR PeriodEnd = MAX('Calendar'[Date])
+RETURN
+    COUNTROWS(
+        FILTER(
+            VALUES(Customers[Customer_ID]),
+            VAR FirstCompletedOrder =
+                CALCULATE(
+                    MIN(Orders[Order_Date]),
+                    REMOVEFILTERS('Calendar'),
+                    Orders[Order_Status] = "Completed"
+                )
+            RETURN NOT ISBLANK(FirstCompletedOrder)
+                && FirstCompletedOrder >= PeriodStart
+                && FirstCompletedOrder <= PeriodEnd
+        )
+    )

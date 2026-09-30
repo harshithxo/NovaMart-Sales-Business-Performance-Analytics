@@ -1,0 +1,7 @@
+Check,Before,After/Count,Action
+Raw order rows,80340,80340,Source rows loaded
+Duplicate Order_ID rows,340,0,"Deduplicated by Order_ID, retained first occurrence"
+Missing Customer_ID,415,0,Dropped rows because customer linkage is required
+Invalid Product_ID,99,0,Dropped rows with no product master match
+Non-positive Quantity,180,0,Dropped rows because order quantity must be positive
+Final cleaned order rows,80340,79298,"After duplicate removal, key validation, numeric parsing and business-rule checks"

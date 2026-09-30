@@ -1,0 +1,73 @@
+Product_ID,Product_Name,Category,Subcategory,Brand,Unit_Cost,Selling_Price
+P001,NovaBook Air 14,Electronics,Laptops,NovaTech,48000.0,69999.0
+P002,NovaBook Pro 16,Electronics,Laptops,NovaTech,64000.0,89999.0
+P003,WorkMate 15 Laptop,Electronics,Laptops,WorkMate,39000.0,59999.0
+P004,SmartView 43 TV,Electronics,Televisions,ViewMax,24000.0,38999.0
+P005,SmartView 55 TV,Electronics,Televisions,ViewMax,32000.0,52999.0
+P006,SoundPod Pro,electronics,Audio,SoundPod,4500.0,7999.0
+P007,SoundPod Mini,electronics,Audio,SoundPod,1800.0,3299.0
+P008,FitBand Active,electronics,Wearables,NovaFit,1500.0,2999.0
+P009,AirCool 1.5T AC,Home Appliances,Cooling,HomeEase,32000.0,48999.0
+P010,BreezePlus Cooler,Home Appliances,Cooling,HomeEase,8500.0,13499.0
+P011,CleanPro Vacuum,Home Appliances,Cleaning,CleanPro,6200.0,9999.0
+P012,WashSmart 7kg Washer,Home Appliances,Laundry,WashSmart,21000.0,32999.0
+P013,HeatWave Microwave,Home Appliances,Kitchen,HeatWave,7000.0,10999.0
+P014,ChefMate Air Fryer,Home Appliances,Kitchen,ChefMate,4200.0,6999.0
+P015,AutoBrew Coffee Maker,Home Appliances,Kitchen,ChefMate,3500.0,5999.0
+P016,LoungeMax 3-Seater,furniture,Living Room,CasaLiving,18000.0,29999.0
+P017,ErgoFlex Office Chair,Furniture,Office,CasaLiving,6500.0,10999.0
+P018,UrbanWood Study Desk,furniture,Office,UrbanWood,7500.0,12499.0
+P019,SleepWell Queen Mattress,Furniture,Bedroom,SleepWell,10500.0,16999.0
+P020,NestHome Bedside Table,furniture,Bedroom,NestHome,2500.0,4499.0
+P021,Everyday Polo Shirt,fashion,Men,UrbanWear,700.0,1299.0
+P022,Classic Denim Jeans,fashion,Men,UrbanWear,1100.0,1999.0
+P023,Comfort Sneakers,fashion,Footwear,Stride,1500.0,2999.0
+P024,Active Joggers,Fashion,Sportswear,Stride,900.0,1699.0
+P025,Everyday Kurta,fashion,Women,EthnicCo,800.0,1499.0
+P026,Aero Running Shoes,Fashion,Footwear,Stride,2200.0,3999.0
+P027,SkinGlow Face Serum,beauty,Skincare,GlowLab,650.0,1199.0
+P028,SkinGlow Sunscreen,beauty,Skincare,GlowLab,450.0,799.0
+P029,FreshMist Body Spray,beauty,Personal Care,FreshMist,300.0,599.0
+P030,SilkTouch Shampoo,beauty,Haircare,SilkTouch,240.0,499.0
+P031,ProBlend Mixer,Home Appliances,Kitchen,ChefMate,2600.0,4499.0
+P032,SmartScale Body Scale,Electronics,Wearables,NovaFit,1200.0,2299.0
+P033,PowerBank 20K,electronics,Accessories,ChargePro,1100.0,1999.0
+P034,FastCharge Adapter,Electronics,Accessories,ChargePro,500.0,999.0
+P035,UrbanLamp Desk Lamp,furniture,Office,UrbanWood,900.0,1699.0
+P036,Memory Foam Pillow,furniture,Bedroom,SleepWell,550.0,999.0
+P037,NutriGranola 1kg,Grocery,Pantry,NutriLife,330.0,549.0
+P038,Organic Coffee 500g,grocery,Pantry,BeanCraft,420.0,699.0
+P039,Daily Olive Oil 1L,Grocery,Cooking,DailyFresh,520.0,799.0
+P040,Premium Basmati 5kg,Grocery,Staples,HarvestGold,520.0,799.0
+P041,GreenTea 100 Bags,Grocery,Beverages,WellLeaf,180.0,349.0
+P042,Protein Oats 1kg,grocery,Health,FitFuel,340.0,599.0
+P043,Yoga Mat Pro,Sports & Outdoors,Fitness,FlexFit,650.0,1199.0
+P044,Home Dumbbell Set,Sports & Outdoors,Fitness,FlexFit,1800.0,3299.0
+P045,Cycling Helmet,Sports & Outdoors,Cycling,RideSafe,1200.0,2199.0
+P046,Cricket Bat Club,Sports & Outdoors,Cricket,PlayPro,1900.0,3499.0
+P047,Badminton Racket Pair,Sports & Outdoors,Racquet Sports,PlayPro,1400.0,2599.0
+P048,SmartOffice Monitor 24,electronics,Monitors,ViewMax,9000.0,14999.0
+P049,NovaTab 10,electronics,Tablets,NovaTech,15500.0,24999.0
+P050,NovaPhone 5G,electronics,Mobiles,NovaTech,13500.0,21999.0
+P051,NovaPhone Max 5G,Electronics,Mobiles,NovaTech,20500.0,32999.0
+P052,StreamCam 1080p,Electronics,Accessories,ViewMax,2600.0,4499.0
+P053,Wireless Keyboard,Electronics,Accessories,WorkMate,900.0,1699.0
+P054,Wireless Mouse,electronics,Accessories,WorkMate,450.0,899.0
+P055,Premium Office Bundle,Furniture,Office,CasaLiving,11200.0,17999.0
+P056,Executive Office Desk,furniture,Office,CasaLiving,14500.0,23999.0
+P057,SmartKettle 1.5L,Home Appliances,Kitchen,HeatWave,1300.0,2299.0
+P058,Induction Cooktop,Home Appliances,Kitchen,HeatWave,1600.0,2799.0
+P059,Steam Iron Plus,Home Appliances,Laundry,CleanPro,1200.0,2199.0
+P060,LED Study Lamp,furniture,Office,UrbanWood,700.0,1299.0
+P061,Travel Backpack 28L,fashion,Bags,UrbanWear,900.0,1799.0
+P062,Premium Handbag,fashion,Bags,EthnicCo,1600.0,3199.0
+P063,Analog Fitness Watch,Electronics,Wearables,NovaFit,900.0,1799.0
+P064,Smart Speaker Mini,Electronics,Audio,SoundPod,2200.0,3999.0
+P065,Smart Speaker Max,electronics,Audio,SoundPod,4300.0,7499.0
+P066,Electric Grill,Home Appliances,Kitchen,ChefMate,2400.0,4199.0
+P067,Robot Floor Cleaner,Home Appliances,Cleaning,CleanPro,16800.0,26999.0
+P068,Dining Table 4-Seater,Furniture,Dining,CasaLiving,14500.0,23999.0
+P069,Dining Chair Pair,furniture,Dining,CasaLiving,4800.0,7999.0
+P070,Kids Study Chair,furniture,Kids,CasaLiving,2800.0,4799.0
+P071,Organic Honey 500g,Grocery,Pantry,NutriLife,260.0,499.0
+P072,Almonds 500g,Grocery,Health,HarvestGold,400.0,699.0

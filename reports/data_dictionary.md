@@ -1,0 +1,37 @@
+# Data Dictionary
+
+The analytical model uses the following fields. `analytics_sales.csv` is a completed-order denormalized reporting layer created from the normalized dimension and fact tables.
+
+| Field | Type | Description | Business meaning | Example |
+|---|---|---|---|---|
+| Order_ID | string | Unique transaction identifier | Primary key for the Orders fact table | O000001 |
+| Order_Date | date | Date on which the order was placed | Time dimension for trend and period analysis | 2025-01-15 |
+| Customer_ID | string | Customer foreign key | Links transaction to customer master | C01234 |
+| Product_ID | string | Product foreign key | Links transaction to product master | P050 |
+| Region_ID | string | Location-market foreign key | Supports Region → State → City analysis | R01 |
+| Salesperson_ID | string | Sales representative foreign key | Used for salesperson performance reporting | SP01 |
+| Channel_ID | string | Sales channel foreign key | Links order to Online, Retail Store, Marketplace or Corporate | CH01 |
+| Quantity | integer | Units sold on the order line | Volume KPI input | 2 |
+| Unit_Price | decimal | Selling price per unit before discount | Price realization input | 21999.00 |
+| Discount | decimal | Discount fraction applied to unit price | Revenue calculation input; 0.10 = 10% | 0.10 |
+| Revenue | decimal | Net sales value after discount | Quantity × Unit Price × (1 - Discount) | 39598.20 |
+| Unit_Cost | decimal | Estimated cost per unit | Cost calculation input | 13500.00 |
+| Cost | decimal | Total cost for the order line | Quantity × Unit Cost | 27000.00 |
+| Profit | decimal | Contribution before other operating expenses | Revenue - Cost | 12598.20 |
+| Payment_Method | string | Payment method used | Payment mix and operational analysis | UPI |
+| Order_Status | string | Order lifecycle status | Completed is included in core KPI analysis | Completed |
+| Customer_Name | string | Customer display name | Reporting label | Aarav Mehta |
+| Gender | string | Customer gender field | Descriptive customer analysis | Female |
+| Age | integer | Customer age | Descriptive customer analysis | 31 |
+| City | string | Customer city | Geographic drill-down | Hyderabad |
+| State | string | Customer state | Geographic analysis | Telangana |
+| Region | string | Customer market region | Regional grouping | South |
+| Customer_Segment | string | Behavior segment derived from completed-order history | High Value, Loyal, Regular, Occasional, Low Value | High Value |
+| Registration_Date | date | Customer registration date | Customer tenure analysis | 2024-08-21 |
+| Product_Name | string | Product display name | Product reporting label | NovaPhone 5G |
+| Category | string | Product category | Portfolio analysis | Electronics |
+| Subcategory | string | Product subcategory | Detailed product analysis | Mobiles |
+| Brand | string | Product brand | Brand analysis | NovaTech |
+| Salesperson_Name | string | Salesperson display name | Sales performance label | Aarav Mehta |
+| Team | string | Sales team | Team analysis | South Team |
+| Channel_Name | string | Sales channel name | Channel reporting label | Online |

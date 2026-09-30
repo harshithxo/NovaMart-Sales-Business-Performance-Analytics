@@ -1,0 +1,21 @@
+Region_ID,Region_Name,State,City
+R01,South,Telangana,Hyderabad
+R02,South,Telangana,Warangal
+R03,South,Andhra Pradesh,Vijayawada
+R04,South,Karnataka,Bengaluru
+R05,South,Tamil Nadu,Chennai
+R06,South,Kerala,Kochi
+R07,West,Maharashtra,Mumbai
+R08,West,Maharashtra,Pune
+R09,West,Gujarat,Ahmedabad
+R10,West,Rajasthan,Jaipur
+R11,North,Delhi,New Delhi
+R12,North,Uttar Pradesh,Lucknow
+R13,North,Haryana,Gurugram
+R14,North,Punjab,Ludhiana
+R15,East,West Bengal,Kolkata
+R16,East,Odisha,Bhubaneswar
+R17,East,Bihar,Patna
+R18,Central,Madhya Pradesh,Indore
+R19,Central,Chhattisgarh,Raipur
+R20,Central,Madhya Pradesh,Bhopal
